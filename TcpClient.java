@@ -3,7 +3,7 @@ import java.net.*;
 
 public class TcpClient {
     public static void main(String[] args) throws Exception {
-        try (Socket socket = new Socket("localhost", 8001);
+        try (Socket socket = new Socket("localhost", 80);
              FileInputStream fis = new FileInputStream("client_send.txt");
              FileOutputStream fos = new FileOutputStream("client_recv.txt")) {
 
@@ -14,7 +14,7 @@ public class TcpClient {
                 output.write(ch);
             }
 
-            output.write(0);
+//            output.write(0);
 
             InputStream input = socket.getInputStream();
 
