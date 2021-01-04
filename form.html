@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>テストフォーム</title>
+</head>
+<body>
+    <div class="form-group">
+        <form action="http://localhost:8001/posttest/PostTest" method="post">
+            <div class="text-input">
+                テキストボックス:<input type="text" name="text_name">
+            </div>
+            <div class="text-input">
+                パスワード:<input type="password" name="password_name">
+            </div>
+            <div class="text-input">
+                テキストエリア:<br/>
+                <textarea name="textarea_name" rows="4" cols="40">
+        </textarea>
+            </div>
+            <table border="1">
+                <tr>
+                    <td>
+                        ラジオボタン:
+                        <input type="radio" name="radio_name" value="radio1">1
+                        <input type="radio" name="radio_name" value="radio2">2
+                        <input type="radio" name="radio_name" value="radio3">3
+                        <input type="radio" name="radio_name" value="radio4">4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        チェックボックス:
+                        <input type="checkbox" name="check_name" value="check1">1
+                        <input type="checkbox" name="check_name" value="check2">2
+                        <input type="checkbox" name="check_name" value="check3">3
+                        <input type="checkbox" name="check_name" value="check4">4
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="hidden_name" value="hidden_value日本語">
+            ファイルアップロード:
+            <input type="file" name="submit_name" value="送るよ" />
+            <input type="submit" name="submit_name" value="送るよ" />
+        </form>
+    </div>
+
+
+</body>
+</html>

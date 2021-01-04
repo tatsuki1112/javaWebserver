@@ -1,0 +1,15 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.text-input {
+    background-color: antiquewhite;
+    font-family: "Yu Gothic UI" ,Arial, sans-serif;
+    font-weight: bold;
+}
+.text-input input,
+textarea
+{
+    border: solid;
+    border-radius: 1em;
+}
