@@ -1,3 +1,4 @@
+package tomcat_bbs;
 import java.io.*;
 import javax.servlet.http.*;
 
